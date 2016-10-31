@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 StoryShare. All rights reserved.
 
 import Nimble
-import Quick
+//import Quick
 import RxSwift
 
 // FIXME: the valueOrNil extension computed property causes constant subscribe, unsubscribe.
@@ -65,7 +65,7 @@ public func beforeSuite<T >(closure: @escaping () -> T) -> Variable<T?> {
 //        sendNext(value, result)
     }
     
-    beforeSuite(untypedWrapperClosure)
+    beforeSuite(closure: untypedWrapperClosure)
 
     return result
 }
@@ -79,7 +79,7 @@ public func beforeEach<T>(closure: @escaping () -> T) -> Variable<T?> {
 //        result.next(value)
     }
     
-    beforeEach(untypedWrapperClosure)
+    beforeEach(closure: untypedWrapperClosure)
     
     return result
 }
