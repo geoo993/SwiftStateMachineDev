@@ -34,7 +34,6 @@
 		C77534341DC7EF6200629628 /* App+Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = C775342F1DC7EF6200629628 /* App+Metadata.swift */; };
 		C77534351DC7EF6200629628 /* App+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77534301DC7EF6200629628 /* App+Schema.swift */; };
 		C77534361DC7EF6200629628 /* App+Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77534311DC7EF6200629628 /* App+Tasks.swift */; };
-		C77534381DC7EF7500629628 /* ReadingMode.schema.dot in Resources */ = {isa = PBXBuildFile; fileRef = C77534371DC7EF7500629628 /* ReadingMode.schema.dot */; };
 		C775343C1DC7EF8C00629628 /* ReadingMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77534391DC7EF8C00629628 /* ReadingMode.swift */; };
 		C775343D1DC7EF8C00629628 /* ReadingMode+Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = C775343A1DC7EF8C00629628 /* ReadingMode+Metadata.swift */; };
 		C775343E1DC7EF8C00629628 /* ReadingMode+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = C775343B1DC7EF8C00629628 /* ReadingMode+Schema.swift */; };
@@ -296,7 +295,6 @@
 		C775342F1DC7EF6200629628 /* App+Metadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "App+Metadata.swift"; sourceTree = "<group>"; };
 		C77534301DC7EF6200629628 /* App+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "App+Schema.swift"; sourceTree = "<group>"; };
 		C77534311DC7EF6200629628 /* App+Tasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "App+Tasks.swift"; sourceTree = "<group>"; };
-		C77534371DC7EF7500629628 /* ReadingMode.schema.dot */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ReadingMode.schema.dot; path = SwiftReferenceApp/ReadingMode.schema.dot; sourceTree = "<group>"; };
 		C77534391DC7EF8C00629628 /* ReadingMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadingMode.swift; sourceTree = "<group>"; };
 		C775343A1DC7EF8C00629628 /* ReadingMode+Metadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ReadingMode+Metadata.swift"; sourceTree = "<group>"; };
 		C775343B1DC7EF8C00629628 /* ReadingMode+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ReadingMode+Schema.swift"; sourceTree = "<group>"; };
@@ -342,7 +340,6 @@
 				C77534261DC7EF2800629628 /* ApplicationSchema.png */,
 				C77534271DC7EF2800629628 /* ApplicationSchema.svg */,
 				C77534281DC7EF2800629628 /* AppTextView.schema.dot */,
-				C77534371DC7EF7500629628 /* ReadingMode.schema.dot */,
 			);
 			name = dotFiles;
 			path = ..;
@@ -806,7 +803,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C77533191DC7EA9A00629628 /* LaunchScreen.storyboard in Resources */,
-				C77534381DC7EF7500629628 /* ReadingMode.schema.dot in Resources */,
 				C775342C1DC7EF2800629628 /* AppTextView.schema.dot in Resources */,
 				C77533161DC7EA9A00629628 /* Assets.xcassets in Resources */,
 				C775342A1DC7EF2800629628 /* ApplicationSchema.png in Resources */,

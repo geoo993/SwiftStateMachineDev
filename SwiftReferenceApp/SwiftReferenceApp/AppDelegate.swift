@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
        
-        ReadingMode.schema.saveDOTDigraphIfRunningInSimulator(filepathRelativeToCurrentFile: "ReadingMode.schema.dot")
+        ReadingMode.schema.saveDOTDigraphIfRunningInSimulator(filepathRelativeToCurrentFile: "StorySmartiesInteractor.schema.dot")
         AppTextView.schema.saveDOTDigraphIfRunningInSimulator(filepathRelativeToCurrentFile: "AppTextView.schema.dot")
         
         

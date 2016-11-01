@@ -43,27 +43,27 @@ public class AppTextView
     }
     
     
-    static var schema = tSchema(initialState: .start) 
+    static var schema = tSchema(initialState: .idle) 
     { 
         state, event in switch state 
         {
-            case AppReadModeState.readMode : 
-                switch event {
-                case AppTextEvent.enableBlur:
-                
-                return (AppReadModeState.start, nil)
-                //return solution(AppReadModeState.start, event: AppReadModeEvent.complete)
-                default: return nil
-            }
-            
-            case AppReadModeState.start : 
-                switch event {
-                case AppTextEvent.scrollingDisabled:
-                    
-                    return (AppReadModeState.initiasing, nil)
-                //return solution(AppReadModeState.initiasing, event: AppReadModeEvent.complete)
-                default: return nil
-            }
+//            case AppReadModeState.readMode : 
+//                switch event {
+//                case AppTextEvent.enableBlur:
+//                
+//                return (AppReadModeState.start, nil)
+//                //return solution(AppReadModeState.start, event: AppReadModeEvent.complete)
+//                default: return nil
+//            }
+//            
+//            case AppReadModeState.start : 
+//                switch event {
+//                case AppTextEvent.scrollingDisabled:
+//                    
+//                    return (AppReadModeState.initiasing, nil)
+//                //return solution(AppReadModeState.initiasing, event: AppReadModeEvent.complete)
+//                default: return nil
+//            }
             
             
             

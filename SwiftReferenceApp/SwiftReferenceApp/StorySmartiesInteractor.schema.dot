@@ -2,7 +2,7 @@ digraph {
     graph [rankdir=LR]
 
     0 [label="", shape=plaintext]
-    0 -> 4 [label="START"]
+    0 -> 1 [label="START"]
 
     1 [label="Loading Story Shelf"]
     2 [label="Computing Next Page"]
@@ -14,4 +14,13 @@ digraph {
     8 [label="Showing Feedback"]
     9 [label="Waiting"]
 
+    1 -> 4 [label="Complete"]
+    2 -> 7 [label="Complete"]
+    3 -> 9 [label="Complete"]
+    4 -> 2 [label="Choosing Book"]
+    5 -> 6 [label="Complete"]
+    6 -> 7 [label="Complete"]
+    7 -> 3 [label="Start Initialising"]
+    7 -> 8 [label="Start Feedback"]
+    9 -> 5 [label="Start Reading"]
 }
