@@ -13,7 +13,6 @@
 		C77533191DC7EA9A00629628 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C77533171DC7EA9A00629628 /* LaunchScreen.storyboard */; };
 		C77533241DC7EA9A00629628 /* SwiftReferenceAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77533231DC7EA9A00629628 /* SwiftReferenceAppTests.swift */; };
 		C775332F1DC7EA9A00629628 /* SwiftReferenceAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C775332E1DC7EA9A00629628 /* SwiftReferenceAppUITests.swift */; };
-		C77533461DC7EAFD00629628 /* Test+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77533431DC7EAFD00629628 /* Test+Extensions.swift */; };
 		C775334C1DC7EB8900629628 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = C775334A1DC7EB8900629628 /* Cartfile */; };
 		C775334D1DC7EB8900629628 /* Cartfile.resolved in Resources */ = {isa = PBXBuildFile; fileRef = C775334B1DC7EB8900629628 /* Cartfile.resolved */; };
 		C77533FA1DC7ED2900629628 /* SwiftyStateMachine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C77533D51DC7EC5000629628 /* SwiftyStateMachine.framework */; };
@@ -22,8 +21,6 @@
 		C77533FF1DC7ED2900629628 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C775339A1DC7EC2700629628 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C77534021DC7ED2A00629628 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C77533A21DC7EC2700629628 /* RxCocoa.framework */; };
 		C77534031DC7ED2A00629628 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C77533A21DC7EC2700629628 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C775340A1DC7ED2A00629628 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C775335D1DC7EBF900629628 /* Nimble.framework */; };
-		C775340B1DC7ED2A00629628 /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C775335D1DC7EBF900629628 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C775341E1DC7EEEE00629628 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C775341B1DC7EEEE00629628 /* User.swift */; };
 		C775341F1DC7EEEE00629628 /* User+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C775341C1DC7EEEE00629628 /* User+Extension.swift */; };
 		C77534201DC7EEEE00629628 /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = C775341D1DC7EEEE00629628 /* User+Schema.swift */; };
@@ -62,111 +59,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = C775330A1DC7EA9900629628;
 			remoteInfo = SwiftReferenceApp;
-		};
-		C77533581DC7EBF900629628 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C775334F1DC7EBF800629628 /* Nimble.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1F925EAD195C0D6300ED456B;
-			remoteInfo = "Nimble-macOS";
-		};
-		C775335A1DC7EBF900629628 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C775334F1DC7EBF800629628 /* Nimble.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1F925EB7195C0D6300ED456B;
-			remoteInfo = "Nimble-macOSTests";
-		};
-		C775335C1DC7EBF900629628 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C775334F1DC7EBF800629628 /* Nimble.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1F1A74291940169200FFFC47;
-			remoteInfo = "Nimble-iOS";
-		};
-		C775335E1DC7EBF900629628 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C775334F1DC7EBF800629628 /* Nimble.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1F1A74341940169200FFFC47;
-			remoteInfo = "Nimble-iOSTests";
-		};
-		C77533601DC7EBF900629628 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C775334F1DC7EBF800629628 /* Nimble.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1F5DF1551BDCA0CE00C3A531;
-			remoteInfo = "Nimble-tvOS";
-		};
-		C77533621DC7EBF900629628 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C775334F1DC7EBF800629628 /* Nimble.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1F5DF15E1BDCA0CE00C3A531;
-			remoteInfo = "Nimble-tvOSTests";
-		};
-		C77533701DC7EC0A00629628 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C77533641DC7EC0A00629628 /* Quick.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DAEB6B8E1943873100289F44;
-			remoteInfo = "Quick-macOS";
-		};
-		C77533721DC7EC0A00629628 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C77533641DC7EC0A00629628 /* Quick.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DAEB6B991943873100289F44;
-			remoteInfo = "Quick-macOSTests";
-		};
-		C77533741DC7EC0A00629628 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C77533641DC7EC0A00629628 /* Quick.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DA5663E81A4C8D8500193C88;
-			remoteInfo = "QuickFocused-macOSTests";
-		};
-		C77533761DC7EC0A00629628 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C77533641DC7EC0A00629628 /* Quick.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5A5D117C19473F2100F6D13D;
-			remoteInfo = "Quick-iOS";
-		};
-		C77533781DC7EC0A00629628 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C77533641DC7EC0A00629628 /* Quick.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5A5D118619473F2100F6D13D;
-			remoteInfo = "Quick-iOSTests";
-		};
-		C775337A1DC7EC0A00629628 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C77533641DC7EC0A00629628 /* Quick.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DA9876B21A4C70EB0004AA17;
-			remoteInfo = "QuickFocused-iOSTests";
-		};
-		C775337C1DC7EC0A00629628 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C77533641DC7EC0A00629628 /* Quick.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1F118CD51BDCA4AB005013A2;
-			remoteInfo = "Quick-tvOS";
-		};
-		C775337E1DC7EC0A00629628 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C77533641DC7EC0A00629628 /* Quick.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1F118CDE1BDCA4AB005013A2;
-			remoteInfo = "Quick-tvOSTests";
-		};
-		C77533801DC7EC0A00629628 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C77533641DC7EC0A00629628 /* Quick.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1F118CF01BDCA4BB005013A2;
-			remoteInfo = "QuickFocused-tvOSTests";
 		};
 		C77533991DC7EC2700629628 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -336,55 +228,6 @@
 			remoteGlobalIDString = CBE36D131AC44BA000CFE10F;
 			remoteInfo = "SwiftyStateMachine-Mac Tests";
 		};
-		C77533E71DC7EC6500629628 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C77533DC1DC7EC6400629628 /* Swiftz.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 84A88F981A71DF7F003D53CF;
-			remoteInfo = Swiftz;
-		};
-		C77533E91DC7EC6500629628 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C77533DC1DC7EC6400629628 /* Swiftz.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 84A88FA31A71DF7F003D53CF;
-			remoteInfo = SwiftzTests;
-		};
-		C77533EB1DC7EC6500629628 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C77533DC1DC7EC6400629628 /* Swiftz.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 84DF751E1B0BD17700C912B0;
-			remoteInfo = "Swiftz-iOS";
-		};
-		C77533ED1DC7EC6500629628 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C77533DC1DC7EC6400629628 /* Swiftz.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 84DF75281B0BD17700C912B0;
-			remoteInfo = "Swiftz-iOSTests";
-		};
-		C77533EF1DC7EC6500629628 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C77533DC1DC7EC6400629628 /* Swiftz.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8240CD1C1C3A395F00EF4D29;
-			remoteInfo = "Swiftz-tvOS";
-		};
-		C77533F11DC7EC6500629628 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C77533DC1DC7EC6400629628 /* Swiftz.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8240CD251C3A396000EF4D29;
-			remoteInfo = "Swiftz-tvOSTests";
-		};
-		C77533F31DC7EC6500629628 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C77533DC1DC7EC6400629628 /* Swiftz.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8240CDD81C3A41F000EF4D29;
-			remoteInfo = "Swiftz-watchOS";
-		};
 		C77533FC1DC7ED2900629628 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C77533CD1DC7EC5000629628 /* SwiftyStateMachine.xcodeproj */;
@@ -406,34 +249,6 @@
 			remoteGlobalIDString = C80938F51B8A71760088E94D;
 			remoteInfo = "RxCocoa-iOS";
 		};
-		C775340C1DC7ED2A00629628 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C775334F1DC7EBF800629628 /* Nimble.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 1F1A74281940169200FFFC47;
-			remoteInfo = "Nimble-iOS";
-		};
-		C77534151DC7EE2500629628 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C775340F1DC7EE2400629628 /* SwiftTask.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1F46DED4199EDF1000F97868;
-			remoteInfo = SwiftTask;
-		};
-		C77534171DC7EE2500629628 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C775340F1DC7EE2400629628 /* SwiftTask.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1F46DEDF199EDF1000F97868;
-			remoteInfo = "SwiftTask-OSXTests";
-		};
-		C77534191DC7EE2500629628 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C775340F1DC7EE2400629628 /* SwiftTask.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4822F0D019D00ABF00F5F572;
-			remoteInfo = "SwiftTask-iOSTests";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -446,7 +261,6 @@
 				C77533FF1DC7ED2900629628 /* RxSwift.framework in Embed Frameworks */,
 				C77533FB1DC7ED2900629628 /* SwiftyStateMachine.framework in Embed Frameworks */,
 				C77534031DC7ED2A00629628 /* RxCocoa.framework in Embed Frameworks */,
-				C775340B1DC7ED2A00629628 /* Nimble.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,15 +280,10 @@
 		C775332A1DC7EA9A00629628 /* SwiftReferenceAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftReferenceAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C775332E1DC7EA9A00629628 /* SwiftReferenceAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftReferenceAppUITests.swift; sourceTree = "<group>"; };
 		C77533301DC7EA9A00629628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C77533431DC7EAFD00629628 /* Test+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Test+Extensions.swift"; sourceTree = "<group>"; };
 		C775334A1DC7EB8900629628 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		C775334B1DC7EB8900629628 /* Cartfile.resolved */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
-		C775334F1DC7EBF800629628 /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = Carthage/Checkouts/Nimble/Nimble.xcodeproj; sourceTree = "<group>"; };
-		C77533641DC7EC0A00629628 /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = Carthage/Checkouts/Quick/Quick.xcodeproj; sourceTree = "<group>"; };
 		C77533821DC7EC2600629628 /* Rx.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Rx.xcodeproj; path = Carthage/Checkouts/RxSwift/Rx.xcodeproj; sourceTree = "<group>"; };
 		C77533CD1DC7EC5000629628 /* SwiftyStateMachine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyStateMachine.xcodeproj; path = Carthage/Checkouts/SwiftyStateMachine/SwiftyStateMachine.xcodeproj; sourceTree = "<group>"; };
-		C77533DC1DC7EC6400629628 /* Swiftz.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swiftz.xcodeproj; path = Carthage/Checkouts/Swiftz/Swiftz.xcodeproj; sourceTree = "<group>"; };
-		C775340F1DC7EE2400629628 /* SwiftTask.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftTask.xcodeproj; path = Carthage/Checkouts/SwiftTask/SwiftTask.xcodeproj; sourceTree = "<group>"; };
 		C775341B1DC7EEEE00629628 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C775341C1DC7EEEE00629628 /* User+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+Extension.swift"; sourceTree = "<group>"; };
 		C775341D1DC7EEEE00629628 /* User+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+Schema.swift"; sourceTree = "<group>"; };
@@ -507,7 +316,6 @@
 				C77533FE1DC7ED2900629628 /* RxSwift.framework in Frameworks */,
 				C77533FA1DC7ED2900629628 /* SwiftyStateMachine.framework in Frameworks */,
 				C77534021DC7ED2A00629628 /* RxCocoa.framework in Frameworks */,
-				C775340A1DC7ED2A00629628 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,7 +383,6 @@
 			isa = PBXGroup;
 			children = (
 				C77533231DC7EA9A00629628 /* SwiftReferenceAppTests.swift */,
-				C77533431DC7EAFD00629628 /* Test+Extensions.swift */,
 				C77533251DC7EA9A00629628 /* Info.plist */,
 			);
 			path = SwiftReferenceAppTests;
@@ -655,43 +462,10 @@
 		C775334E1DC7EB9800629628 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				C775340F1DC7EE2400629628 /* SwiftTask.xcodeproj */,
-				C77533DC1DC7EC6400629628 /* Swiftz.xcodeproj */,
 				C77533CD1DC7EC5000629628 /* SwiftyStateMachine.xcodeproj */,
 				C77533821DC7EC2600629628 /* Rx.xcodeproj */,
-				C77533641DC7EC0A00629628 /* Quick.xcodeproj */,
-				C775334F1DC7EBF800629628 /* Nimble.xcodeproj */,
 			);
 			name = Dependencies;
-			sourceTree = "<group>";
-		};
-		C77533501DC7EBF800629628 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C77533591DC7EBF900629628 /* Nimble.framework */,
-				C775335B1DC7EBF900629628 /* NimbleTests.xctest */,
-				C775335D1DC7EBF900629628 /* Nimble.framework */,
-				C775335F1DC7EBF900629628 /* NimbleTests.xctest */,
-				C77533611DC7EBF900629628 /* Nimble.framework */,
-				C77533631DC7EBF900629628 /* NimbleTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		C77533651DC7EC0A00629628 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C77533711DC7EC0A00629628 /* Quick.framework */,
-				C77533731DC7EC0A00629628 /* Quick-macOSTests.xctest */,
-				C77533751DC7EC0A00629628 /* QuickFocused-macOSTests.xctest */,
-				C77533771DC7EC0A00629628 /* Quick.framework */,
-				C77533791DC7EC0A00629628 /* Quick-iOSTests.xctest */,
-				C775337B1DC7EC0A00629628 /* QuickFocused-iOSTests.xctest */,
-				C775337D1DC7EC0A00629628 /* Quick.framework */,
-				C775337F1DC7EC0A00629628 /* Quick-tvOSTests.xctest */,
-				C77533811DC7EC0A00629628 /* QuickFocused-tvOSTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		C77533831DC7EC2600629628 /* Products */ = {
@@ -732,30 +506,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C77533DD1DC7EC6400629628 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C77533E81DC7EC6500629628 /* Swiftz.framework */,
-				C77533EA1DC7EC6500629628 /* SwiftzTests.xctest */,
-				C77533EC1DC7EC6500629628 /* Swiftz.framework */,
-				C77533EE1DC7EC6500629628 /* Swiftz-iOSTests.xctest */,
-				C77533F01DC7EC6500629628 /* Swiftz.framework */,
-				C77533F21DC7EC6500629628 /* Swiftz-tvOSTests.xctest */,
-				C77533F41DC7EC6500629628 /* Swiftz.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		C77534101DC7EE2400629628 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C77534161DC7EE2500629628 /* SwiftTask.framework */,
-				C77534181DC7EE2500629628 /* SwiftTask-OSXTests.xctest */,
-				C775341A1DC7EE2500629628 /* SwiftTask-iOSTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -774,7 +524,6 @@
 				C77533FD1DC7ED2900629628 /* PBXTargetDependency */,
 				C77534011DC7ED2900629628 /* PBXTargetDependency */,
 				C77534051DC7ED2A00629628 /* PBXTargetDependency */,
-				C775340D1DC7ED2A00629628 /* PBXTargetDependency */,
 			);
 			name = SwiftReferenceApp;
 			productName = SwiftReferenceApp;
@@ -857,28 +606,12 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = C77533501DC7EBF800629628 /* Products */;
-					ProjectRef = C775334F1DC7EBF800629628 /* Nimble.xcodeproj */;
-				},
-				{
-					ProductGroup = C77533651DC7EC0A00629628 /* Products */;
-					ProjectRef = C77533641DC7EC0A00629628 /* Quick.xcodeproj */;
-				},
-				{
 					ProductGroup = C77533831DC7EC2600629628 /* Products */;
 					ProjectRef = C77533821DC7EC2600629628 /* Rx.xcodeproj */;
 				},
 				{
-					ProductGroup = C77534101DC7EE2400629628 /* Products */;
-					ProjectRef = C775340F1DC7EE2400629628 /* SwiftTask.xcodeproj */;
-				},
-				{
 					ProductGroup = C77533CE1DC7EC5000629628 /* Products */;
 					ProjectRef = C77533CD1DC7EC5000629628 /* SwiftyStateMachine.xcodeproj */;
-				},
-				{
-					ProductGroup = C77533DD1DC7EC6400629628 /* Products */;
-					ProjectRef = C77533DC1DC7EC6400629628 /* Swiftz.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -891,111 +624,6 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		C77533591DC7EBF900629628 /* Nimble.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Nimble.framework;
-			remoteRef = C77533581DC7EBF900629628 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C775335B1DC7EBF900629628 /* NimbleTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = NimbleTests.xctest;
-			remoteRef = C775335A1DC7EBF900629628 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C775335D1DC7EBF900629628 /* Nimble.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Nimble.framework;
-			remoteRef = C775335C1DC7EBF900629628 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C775335F1DC7EBF900629628 /* NimbleTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = NimbleTests.xctest;
-			remoteRef = C775335E1DC7EBF900629628 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C77533611DC7EBF900629628 /* Nimble.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Nimble.framework;
-			remoteRef = C77533601DC7EBF900629628 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C77533631DC7EBF900629628 /* NimbleTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = NimbleTests.xctest;
-			remoteRef = C77533621DC7EBF900629628 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C77533711DC7EC0A00629628 /* Quick.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Quick.framework;
-			remoteRef = C77533701DC7EC0A00629628 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C77533731DC7EC0A00629628 /* Quick-macOSTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Quick-macOSTests.xctest";
-			remoteRef = C77533721DC7EC0A00629628 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C77533751DC7EC0A00629628 /* QuickFocused-macOSTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "QuickFocused-macOSTests.xctest";
-			remoteRef = C77533741DC7EC0A00629628 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C77533771DC7EC0A00629628 /* Quick.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Quick.framework;
-			remoteRef = C77533761DC7EC0A00629628 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C77533791DC7EC0A00629628 /* Quick-iOSTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Quick-iOSTests.xctest";
-			remoteRef = C77533781DC7EC0A00629628 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C775337B1DC7EC0A00629628 /* QuickFocused-iOSTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "QuickFocused-iOSTests.xctest";
-			remoteRef = C775337A1DC7EC0A00629628 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C775337D1DC7EC0A00629628 /* Quick.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Quick.framework;
-			remoteRef = C775337C1DC7EC0A00629628 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C775337F1DC7EC0A00629628 /* Quick-tvOSTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Quick-tvOSTests.xctest";
-			remoteRef = C775337E1DC7EC0A00629628 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C77533811DC7EC0A00629628 /* QuickFocused-tvOSTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "QuickFocused-tvOSTests.xctest";
-			remoteRef = C77533801DC7EC0A00629628 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		C775339A1DC7EC2700629628 /* RxSwift.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -1164,76 +792,6 @@
 			remoteRef = C77533DA1DC7EC5000629628 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		C77533E81DC7EC6500629628 /* Swiftz.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Swiftz.framework;
-			remoteRef = C77533E71DC7EC6500629628 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C77533EA1DC7EC6500629628 /* SwiftzTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = SwiftzTests.xctest;
-			remoteRef = C77533E91DC7EC6500629628 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C77533EC1DC7EC6500629628 /* Swiftz.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Swiftz.framework;
-			remoteRef = C77533EB1DC7EC6500629628 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C77533EE1DC7EC6500629628 /* Swiftz-iOSTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Swiftz-iOSTests.xctest";
-			remoteRef = C77533ED1DC7EC6500629628 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C77533F01DC7EC6500629628 /* Swiftz.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Swiftz.framework;
-			remoteRef = C77533EF1DC7EC6500629628 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C77533F21DC7EC6500629628 /* Swiftz-tvOSTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Swiftz-tvOSTests.xctest";
-			remoteRef = C77533F11DC7EC6500629628 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C77533F41DC7EC6500629628 /* Swiftz.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Swiftz.framework;
-			remoteRef = C77533F31DC7EC6500629628 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C77534161DC7EE2500629628 /* SwiftTask.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SwiftTask.framework;
-			remoteRef = C77534151DC7EE2500629628 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C77534181DC7EE2500629628 /* SwiftTask-OSXTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "SwiftTask-OSXTests.xctest";
-			remoteRef = C77534171DC7EE2500629628 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C775341A1DC7EE2500629628 /* SwiftTask-iOSTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "SwiftTask-iOSTests.xctest";
-			remoteRef = C77534191DC7EE2500629628 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -1301,7 +859,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C77533241DC7EA9A00629628 /* SwiftReferenceAppTests.swift in Sources */,
-				C77533461DC7EAFD00629628 /* Test+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1340,11 +897,6 @@
 			isa = PBXTargetDependency;
 			name = "RxCocoa-iOS";
 			targetProxy = C77534041DC7ED2A00629628 /* PBXContainerItemProxy */;
-		};
-		C775340D1DC7ED2A00629628 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Nimble-iOS";
-			targetProxy = C775340C1DC7ED2A00629628 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
