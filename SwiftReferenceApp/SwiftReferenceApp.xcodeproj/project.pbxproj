@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C775330F1DC7EA9A00629628 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C775330E1DC7EA9A00629628 /* AppDelegate.swift */; };
-		C77533111DC7EA9A00629628 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77533101DC7EA9A00629628 /* ViewController.swift */; };
 		C77533161DC7EA9A00629628 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C77533151DC7EA9A00629628 /* Assets.xcassets */; };
 		C77533191DC7EA9A00629628 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C77533171DC7EA9A00629628 /* LaunchScreen.storyboard */; };
 		C77533241DC7EA9A00629628 /* SwiftReferenceAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77533231DC7EA9A00629628 /* SwiftReferenceAppTests.swift */; };
@@ -270,7 +269,6 @@
 /* Begin PBXFileReference section */
 		C775330B1DC7EA9A00629628 /* SwiftReferenceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftReferenceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C775330E1DC7EA9A00629628 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C77533101DC7EA9A00629628 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C77533151DC7EA9A00629628 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C77533181DC7EA9A00629628 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C775331A1DC7EA9A00629628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -289,20 +287,20 @@
 		C775341D1DC7EEEE00629628 /* User+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+Schema.swift"; sourceTree = "<group>"; };
 		C77534211DC7EEFE00629628 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C77534231DC7EF1800629628 /* AppTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTextView.swift; sourceTree = "<group>"; };
-		C77534251DC7EF2800629628 /* ApplicationSchema.dot */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ApplicationSchema.dot; sourceTree = "<group>"; };
-		C77534261DC7EF2800629628 /* ApplicationSchema.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ApplicationSchema.png; sourceTree = "<group>"; };
-		C77534271DC7EF2800629628 /* ApplicationSchema.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ApplicationSchema.svg; sourceTree = "<group>"; };
-		C77534281DC7EF2800629628 /* AppTextView.schema.dot */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AppTextView.schema.dot; sourceTree = "<group>"; };
+		C77534251DC7EF2800629628 /* ApplicationSchema.dot */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ApplicationSchema.dot; path = SwiftReferenceApp/ApplicationSchema.dot; sourceTree = "<group>"; };
+		C77534261DC7EF2800629628 /* ApplicationSchema.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ApplicationSchema.png; path = SwiftReferenceApp/ApplicationSchema.png; sourceTree = "<group>"; };
+		C77534271DC7EF2800629628 /* ApplicationSchema.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = ApplicationSchema.svg; path = SwiftReferenceApp/ApplicationSchema.svg; sourceTree = "<group>"; };
+		C77534281DC7EF2800629628 /* AppTextView.schema.dot */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AppTextView.schema.dot; path = SwiftReferenceApp/AppTextView.schema.dot; sourceTree = "<group>"; };
 		C775342D1DC7EF6200629628 /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		C775342E1DC7EF6200629628 /* App+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "App+Extension.swift"; sourceTree = "<group>"; };
 		C775342F1DC7EF6200629628 /* App+Metadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "App+Metadata.swift"; sourceTree = "<group>"; };
 		C77534301DC7EF6200629628 /* App+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "App+Schema.swift"; sourceTree = "<group>"; };
 		C77534311DC7EF6200629628 /* App+Tasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "App+Tasks.swift"; sourceTree = "<group>"; };
-		C77534371DC7EF7500629628 /* ReadingMode.schema.dot */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadingMode.schema.dot; sourceTree = "<group>"; };
+		C77534371DC7EF7500629628 /* ReadingMode.schema.dot */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ReadingMode.schema.dot; path = SwiftReferenceApp/ReadingMode.schema.dot; sourceTree = "<group>"; };
 		C77534391DC7EF8C00629628 /* ReadingMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadingMode.swift; sourceTree = "<group>"; };
 		C775343A1DC7EF8C00629628 /* ReadingMode+Metadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ReadingMode+Metadata.swift"; sourceTree = "<group>"; };
 		C775343B1DC7EF8C00629628 /* ReadingMode+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ReadingMode+Schema.swift"; sourceTree = "<group>"; };
-		C775343F1DC7EF9A00629628 /* App.schema.dot */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = App.schema.dot; sourceTree = "<group>"; };
+		C775343F1DC7EF9A00629628 /* App.schema.dot */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = App.schema.dot; path = SwiftReferenceApp/App.schema.dot; sourceTree = "<group>"; };
 		C77534411DC7EFA500629628 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		C77534451DC7F14800629628 /* ReadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadViewController.swift; sourceTree = "<group>"; };
 		C77534491DC7F32000629628 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -336,6 +334,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C721A8A01DC896F1000AE3B8 /* dotFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C775343F1DC7EF9A00629628 /* App.schema.dot */,
+				C77534251DC7EF2800629628 /* ApplicationSchema.dot */,
+				C77534261DC7EF2800629628 /* ApplicationSchema.png */,
+				C77534271DC7EF2800629628 /* ApplicationSchema.svg */,
+				C77534281DC7EF2800629628 /* AppTextView.schema.dot */,
+				C77534371DC7EF7500629628 /* ReadingMode.schema.dot */,
+			);
+			name = dotFiles;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		C77533021DC7EA9900629628 = {
 			isa = PBXGroup;
 			children = (
@@ -368,12 +380,7 @@
 				C77534411DC7EFA500629628 /* Global.swift */,
 				C77533151DC7EA9A00629628 /* Assets.xcassets */,
 				C77533171DC7EA9A00629628 /* LaunchScreen.storyboard */,
-				C775343F1DC7EF9A00629628 /* App.schema.dot */,
-				C77534251DC7EF2800629628 /* ApplicationSchema.dot */,
-				C77534261DC7EF2800629628 /* ApplicationSchema.png */,
-				C77534271DC7EF2800629628 /* ApplicationSchema.svg */,
-				C77534281DC7EF2800629628 /* AppTextView.schema.dot */,
-				C77534371DC7EF7500629628 /* ReadingMode.schema.dot */,
+				C721A8A01DC896F1000AE3B8 /* dotFiles */,
 				C775331A1DC7EA9A00629628 /* Info.plist */,
 			);
 			path = SwiftReferenceApp;
@@ -402,7 +409,6 @@
 			children = (
 				C77534211DC7EEFE00629628 /* MainViewController.swift */,
 				C77534451DC7F14800629628 /* ReadViewController.swift */,
-				C77533101DC7EA9A00629628 /* ViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -835,7 +841,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C77534201DC7EEEE00629628 /* User+Schema.swift in Sources */,
-				C77533111DC7EA9A00629628 /* ViewController.swift in Sources */,
 				C775343D1DC7EF8C00629628 /* ReadingMode+Metadata.swift in Sources */,
 				C77534341DC7EF6200629628 /* App+Metadata.swift in Sources */,
 				C775330F1DC7EA9A00629628 /* AppDelegate.swift in Sources */,

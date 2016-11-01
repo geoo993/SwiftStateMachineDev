@@ -44,7 +44,7 @@ public enum AppReadModeState {
     case initiasing//you initialise by going to beginning
     //case ResumeState//you resume reading
     case idle// initialsing complete so now waiting
-    case phonicsAssistance
+    //case phonicsAssistance
     case reading//reading activates reading event when touch pointer is activated
     case recognising// figuring out what to do after reading ended
     case computingNextStep// calcuating the word range of the next word
@@ -52,7 +52,7 @@ public enum AppReadModeState {
     //case CompletedState//complete, this is when you finished reading the page and touch pointer is not touched
     case feedback//feedback state to show score and progress
     case end//stop, reading has ended and you viewed your score
-    case readMode, editingMode, listeningMode, playMode, exploreMode// all modes
+    case readMode//, editingMode, listeningMode, playMode, exploreMode// all modes
 }
 
 public enum AppReadModeEvent  {
@@ -259,7 +259,7 @@ extension AppReadModeState: DOTLabelable {
     
     public static var DOTLabelableItems: [AppReadModeState] 
     {
-        return [ .start, .initiasing, .idle, .reading, .phonicsAssistance, .recognising, .computingNextStep, .feedback, .end, .readMode, .exploreMode, listeningMode, .playMode, .editingMode]
+        return [ .start, .initiasing, .idle, .reading, /*.phonicsAssistance,*/ .recognising, .computingNextStep, .feedback, .end, .readMode]//, .exploreMode, listeningMode, .playMode, .editingMode]
     }
     
     public var DOTLabel: String {
@@ -268,16 +268,16 @@ extension AppReadModeState: DOTLabelable {
         case .initiasing: return "Initialising"
         case .idle: return "Idle"
         case .reading: return "Reading"
-        case .phonicsAssistance: return "Phonics Assistance"
+        //case .phonicsAssistance: return "Phonics Assistance"
         case .recognising: return "Recognising"
         case .computingNextStep : return "Computing Next Step"
         case .feedback: return "Feedback and score"
         case .end : return "Ending"
         case .readMode: return "Reading Mode"
-        case .exploreMode: return"Explore Mode"
-        case .listeningMode: return "Listening Mode"
-        case .playMode: return "Play Mode"
-        case .editingMode: return "Editing Mode"
+        //case .exploreMode: return"Explore Mode"
+        //case .listeningMode: return "Listening Mode"
+        //case .playMode: return "Play Mode"
+        //case .editingMode: return "Editing Mode"
         }
     }
 }
