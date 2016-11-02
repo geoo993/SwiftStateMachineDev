@@ -2,16 +2,17 @@ digraph {
     graph [rankdir=LR]
 
     0 [label="", shape=plaintext]
-    0 -> 4 [label="START"]
+    0 -> 1 [label="START"]
 
-    1 [label="Loading Story Shelf"]
-    2 [label="Computing Next Page"]
-    3 [label="Initialising"]
-    4 [label="Idle"]
-    5 [label="Reading"]
-    6 [label="Recognising(timeout: 2.0)"]
-    7 [label="Computing Next Step"]
-    8 [label="Showing Feedback"]
-    9 [label="Waiting"]
+    1 [label="Initialising"]
+    2 [label="Reading"]
+    3 [label="Running Phonics Assistance"]
+    4 [label="Recognising(timeout: 2.0)"]
+    5 [label="Setting Up Reading Mode and Computing Next Step"]
+    6 [label="Setting Up Investigation Mode and Computing Next Step"]
+    7 [label="Showing Feedback Layer"]
+    8 [label="Waiting"]
+    9 [label="Waiting 2"]
+    10 [label="Switching Mode"]
 
 }

@@ -10,51 +10,97 @@
 import Foundation
 import SwiftyStateMachine
 
-extension ReadingMode 
+
+
+
+extension Mode 
 {    
     
-    public typealias rSchema = GraphableStateMachineSchema<AppReadModeState, AppReadModeEvent, ReadingMode> 
+    public typealias rSchema = GraphableStateMachineSchema<AppReadModeState, AppReadModeEvent, Mode> 
     
-    static var schema = rSchema(initialState: .loadingStoryShelf)//.readMode) 
+    static var schema = rSchema(initialState: .switchingMode)//.readMode) 
     { (state, event) in 
         
         
-        func solution(state: AppReadModeState, event: AppReadModeEvent) -> (AppReadModeState, ((ReadingMode) -> AppReadModeState?)?)? {
+        func solution(state: AppReadModeState, event: AppReadModeEvent) -> (AppReadModeState, ((Mode) -> AppReadModeState?)?)? {
             
             switch state {
-            case AppReadModeState.loadingStoryShelf: 
+            case AppReadModeState.switchingMode: 
                 switch event {
-                case AppReadModeEvent.complete:
-                    print("Loding Story Shelf: now going to idle")
-                    
-                    return (AppReadModeState.idle, nil)
-                    //return solution(AppReadModeState.readMode, event: AppReadModeEvent.complete)
-                    
-                default: 
-                    return nil
-                }
-            case AppReadModeState.idle: 
-                switch event {
-                case AppReadModeEvent.choosingBook:
-                    print("Idle: now going to Page")
-                    
-                    return (AppReadModeState.page, nil)
-                    //return solution(AppReadModeState.readMode, event: AppReadModeEvent.complete)
-                    
-                default: 
-                    return nil
-                }
-            case AppReadModeState.page: 
-                switch event {
-                case AppReadModeEvent.complete:
-                    print("Pagef: now computing next step")
+                case AppReadModeEvent.startReadingMode:
+                    print("Switching Mode: now going to compute next step")
                     
                     return (AppReadModeState.computingNextStep, nil)
                     //return solution(AppReadModeState.readMode, event: AppReadModeEvent.complete)
+                case AppReadModeEvent.startInvestigativeMode:
+                    print("Switching Mode: now going to initialise in investigative mode")
+                    
+                    return (AppReadModeState.initialisingInvestigativeMode, nil)
+                default: 
+                    return nil
+                }
+            case AppReadModeState.initialisingInvestigativeMode: 
+                    switch event {
+                    case AppReadModeEvent.didSelectWord:
+                        print("Initialising Investigative Mode: now going to phonics assistance")
+                        
+                        return (AppReadModeState.phonicsAssistance, nil)
+                    case AppReadModeEvent.failed:
+                        print("Initialising Investigative Mode: now going to waiting 2")
+                        
+                        return (AppReadModeState.investigativeModeWaiting, nil)
+                    case AppReadModeEvent.startFeedback:
+                        print("Computing Next Step: now going to start feedback")
+                        
+                        return (AppReadModeState.feedback, nil)  
+                    default: 
+                        return nil
+                }
+            case AppReadModeState.investigativeModeWaiting: 
+                switch event {
+                case AppReadModeEvent.didSelectWord:
+                    print("Waiting2: now going to phonics assistance")
+                    
+                    return (AppReadModeState.phonicsAssistance, nil)
+                case AppReadModeEvent.switchMode:
+                    print("Waiting2: now going to switch mode")
+                    
+                    return (AppReadModeState.switchingMode, nil)
+                default: 
+                    return nil
+                }
+            case AppReadModeState.phonicsAssistance: 
+                switch event {
+                case AppReadModeEvent.complete:
+                    print("Phonics Assistance: now going to waiting 2")
+                    
+                    return (AppReadModeState.investigativeModeWaiting, nil)
                     
                 default: 
                     return nil
                 }
+//            case AppReadModeState.idle: 
+//                switch event {
+//                case AppReadModeEvent.choosingBook:
+//                    print("Idle: now going to Page")
+//                    
+//                    return (AppReadModeState.page, nil)
+//                    //return solution(AppReadModeState.readMode, event: AppReadModeEvent.complete)
+//                    
+//                default: 
+//                    return nil
+//                }
+//            case AppReadModeState.page: 
+//                switch event {
+//                case AppReadModeEvent.complete:
+//                    print("Pagef: now computing next step")
+//                    
+//                    return (AppReadModeState.computingNextStep, nil)
+//                    //return solution(AppReadModeState.readMode, event: AppReadModeEvent.complete)
+//                    
+//                default: 
+//                    return nil
+//                }
 //            case AppReadModeState.exploreMode: 
 //                switch event {
 //                case AppReadModeEvent.switchMode:
@@ -118,7 +164,7 @@ extension ReadingMode
                 case AppReadModeEvent.complete:
                 print("Initialising: now going to idle")
                 
-                return (AppReadModeState.waiting, nil)
+                return (AppReadModeState.readingModeWaiting, nil)
                 //return solution(AppReadModeState.reading, event: AppReadModeEvent.ActivateReading)
                 
                 //case AppReadModeEvent.Failed:
@@ -128,13 +174,18 @@ extension ReadingMode
                 //print("default resume")
                 return nil
                 }
-            case AppReadModeState.waiting : 
+            case AppReadModeState.readingModeWaiting : 
                 switch event {
                 case AppReadModeEvent.startReading:
-                    print("Idle: now going to start reading")
+                    print("Waiting: now going to start reading")
                     
                     return (AppReadModeState.reading, nil)
                     //return solution(AppReadModeState.reading, event: AppReadModeEvent.complete)
+                case AppReadModeEvent.switchMode:
+                    print("Waiting: now going to switch mode")
+                
+                    return (AppReadModeState.switchingMode, nil)
+                    //return solution(AppReadModeState.phonicsAssistance, event: AppReadModeEvent.complete)
                 //case AppReadModeEvent.startPhonicsAssistance:
                 //    print("Idle: now going to phonics assistance")
                     
@@ -206,10 +257,10 @@ extension ReadingMode
                     
                     return (AppReadModeState.initiasing, nil)
                     //return solution(AppReadModeState.initiasing, event: AppReadModeEvent.complete)
-                case AppReadModeEvent.startFeedback:
-                    print("Computing Next Step: now going to start feedback")
+                case AppReadModeEvent.switchMode:
+                    print("Computing Next Step: now going to switching mode")
                     
-                    return (AppReadModeState.feedback, nil)    
+                    return (AppReadModeState.switchingMode, nil)  
                 default: 
                     return nil
                 }
@@ -236,20 +287,20 @@ extension ReadingMode
                     //return nil
                 //}
                 
-            //case AppReadModeState.CompletedState: 
+            case AppReadModeState.feedback: 
                 
-                //switch event {
+                switch event {
                     
-                //case AppReadModeEvent.ActivateFeedback: 
+                case AppReadModeEvent.complete: 
                     
-                    //print("Completed: you are now checking your score, going end")
+                    print("Feedback: you are now waiting")
                     
-                    //return (AppReadModeState.EndState, nil)
-                    ////return solution(AppReadModeState.EndState, event: AppReadModeEvent.End)
-                //default: 
-                    ////print("default completed")
-                    //return nil
-                //}
+                    return (AppReadModeState.investigativeModeWaiting, nil)
+                    //return solution(AppReadModeState.EndState, event: AppReadModeEvent.End)
+                default: 
+                    //print("default completed")
+                    return nil
+                }
             
 //            case AppReadModeState.feedback: 
 //                switch event {
@@ -292,3 +343,5 @@ extension ReadingMode
 
        
 }
+
+ 

@@ -11,7 +11,7 @@ import Foundation
 import CoreData
 
 //public let app = App.sharedInstance
-public let app = ReadingMode.rSharedInstance
+public let app = Mode.sharedInstance
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,8 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
        
-        ReadingMode.schema.saveDOTDigraphIfRunningInSimulator(filepathRelativeToCurrentFile: "StorySmartiesInteractor.schema.dot")
-        AppTextView.schema.saveDOTDigraphIfRunningInSimulator(filepathRelativeToCurrentFile: "AppTextView.schema.dot")
+        Mode.schema.saveDOTDigraphIfRunningInSimulator(filepathRelativeToCurrentFile: "StoryPageInteractor.schema.dot")
+        //Mode.schema.saveDOTDigraphIfRunningInSimulator(filepathRelativeToCurrentFile: "StoryShelfInteractor.schema.dot")
         
         
         // Override point for customization after application launch.

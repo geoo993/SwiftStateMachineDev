@@ -1,0 +1,11 @@
+digraph {
+    graph [rankdir=LR]
+
+    0 [label="", shape=plaintext]
+    0 -> 1 [label="START"]
+
+    1 [label="Loading StoryShelf"]
+    2 [label="Waiting"]
+
+    1 -> 2 [label="Complete"]
+}

@@ -11,17 +11,19 @@ import SwiftyStateMachine
 import RxSwift
 import UIKit
 
-public class ReadingMode 
+public class Mode 
 {
-    public static let rSharedInstance = ReadingMode()
+    public static let sharedInstance = Mode()
     
     public var rMachine : StateMachine<rSchema>!
+    //public var shMachine : StateMachine<shSchema>!
     
     public required init() 
     {
             
         // Create machine.
-        rMachine = StateMachine(schema: ReadingMode.schema, subject: self)
+        rMachine = StateMachine(schema: Mode.schema, subject: self)
+        //shMachine = StateMachine(schema: Mode.schema, subject: self)
                
     }
 

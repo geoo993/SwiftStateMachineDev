@@ -24,7 +24,7 @@
 		C775341F1DC7EEEE00629628 /* User+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C775341C1DC7EEEE00629628 /* User+Extension.swift */; };
 		C77534201DC7EEEE00629628 /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = C775341D1DC7EEEE00629628 /* User+Schema.swift */; };
 		C77534221DC7EEFE00629628 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77534211DC7EEFE00629628 /* MainViewController.swift */; };
-		C77534241DC7EF1800629628 /* AppTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77534231DC7EF1800629628 /* AppTextView.swift */; };
+		C77534241DC7EF1800629628 /* StoryShelfInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77534231DC7EF1800629628 /* StoryShelfInteractor.swift */; };
 		C77534291DC7EF2800629628 /* ApplicationSchema.dot in Resources */ = {isa = PBXBuildFile; fileRef = C77534251DC7EF2800629628 /* ApplicationSchema.dot */; };
 		C775342A1DC7EF2800629628 /* ApplicationSchema.png in Resources */ = {isa = PBXBuildFile; fileRef = C77534261DC7EF2800629628 /* ApplicationSchema.png */; };
 		C775342B1DC7EF2800629628 /* ApplicationSchema.svg in Resources */ = {isa = PBXBuildFile; fileRef = C77534271DC7EF2800629628 /* ApplicationSchema.svg */; };
@@ -34,9 +34,9 @@
 		C77534341DC7EF6200629628 /* App+Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = C775342F1DC7EF6200629628 /* App+Metadata.swift */; };
 		C77534351DC7EF6200629628 /* App+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77534301DC7EF6200629628 /* App+Schema.swift */; };
 		C77534361DC7EF6200629628 /* App+Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77534311DC7EF6200629628 /* App+Tasks.swift */; };
-		C775343C1DC7EF8C00629628 /* ReadingMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77534391DC7EF8C00629628 /* ReadingMode.swift */; };
-		C775343D1DC7EF8C00629628 /* ReadingMode+Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = C775343A1DC7EF8C00629628 /* ReadingMode+Metadata.swift */; };
-		C775343E1DC7EF8C00629628 /* ReadingMode+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = C775343B1DC7EF8C00629628 /* ReadingMode+Schema.swift */; };
+		C775343C1DC7EF8C00629628 /* Mode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77534391DC7EF8C00629628 /* Mode.swift */; };
+		C775343D1DC7EF8C00629628 /* StoryPageInteractor+Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = C775343A1DC7EF8C00629628 /* StoryPageInteractor+Metadata.swift */; };
+		C775343E1DC7EF8C00629628 /* StoryPageInteractor +Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = C775343B1DC7EF8C00629628 /* StoryPageInteractor +Schema.swift */; };
 		C77534401DC7EF9A00629628 /* App.schema.dot in Resources */ = {isa = PBXBuildFile; fileRef = C775343F1DC7EF9A00629628 /* App.schema.dot */; };
 		C77534421DC7EFA500629628 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77534411DC7EFA500629628 /* Global.swift */; };
 		C77534461DC7F14800629628 /* ReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77534451DC7F14800629628 /* ReadViewController.swift */; };
@@ -285,7 +285,7 @@
 		C775341C1DC7EEEE00629628 /* User+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+Extension.swift"; sourceTree = "<group>"; };
 		C775341D1DC7EEEE00629628 /* User+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+Schema.swift"; sourceTree = "<group>"; };
 		C77534211DC7EEFE00629628 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		C77534231DC7EF1800629628 /* AppTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTextView.swift; sourceTree = "<group>"; };
+		C77534231DC7EF1800629628 /* StoryShelfInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryShelfInteractor.swift; sourceTree = "<group>"; };
 		C77534251DC7EF2800629628 /* ApplicationSchema.dot */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ApplicationSchema.dot; path = SwiftReferenceApp/ApplicationSchema.dot; sourceTree = "<group>"; };
 		C77534261DC7EF2800629628 /* ApplicationSchema.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ApplicationSchema.png; path = SwiftReferenceApp/ApplicationSchema.png; sourceTree = "<group>"; };
 		C77534271DC7EF2800629628 /* ApplicationSchema.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = ApplicationSchema.svg; path = SwiftReferenceApp/ApplicationSchema.svg; sourceTree = "<group>"; };
@@ -295,9 +295,9 @@
 		C775342F1DC7EF6200629628 /* App+Metadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "App+Metadata.swift"; sourceTree = "<group>"; };
 		C77534301DC7EF6200629628 /* App+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "App+Schema.swift"; sourceTree = "<group>"; };
 		C77534311DC7EF6200629628 /* App+Tasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "App+Tasks.swift"; sourceTree = "<group>"; };
-		C77534391DC7EF8C00629628 /* ReadingMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadingMode.swift; sourceTree = "<group>"; };
-		C775343A1DC7EF8C00629628 /* ReadingMode+Metadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ReadingMode+Metadata.swift"; sourceTree = "<group>"; };
-		C775343B1DC7EF8C00629628 /* ReadingMode+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ReadingMode+Schema.swift"; sourceTree = "<group>"; };
+		C77534391DC7EF8C00629628 /* Mode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mode.swift; sourceTree = "<group>"; };
+		C775343A1DC7EF8C00629628 /* StoryPageInteractor+Metadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StoryPageInteractor+Metadata.swift"; sourceTree = "<group>"; };
+		C775343B1DC7EF8C00629628 /* StoryPageInteractor +Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StoryPageInteractor +Schema.swift"; sourceTree = "<group>"; };
 		C775343F1DC7EF9A00629628 /* App.schema.dot */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = App.schema.dot; path = SwiftReferenceApp/App.schema.dot; sourceTree = "<group>"; };
 		C77534411DC7EFA500629628 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		C77534451DC7F14800629628 /* ReadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadViewController.swift; sourceTree = "<group>"; };
@@ -445,10 +445,10 @@
 		C77533401DC7EACB00629628 /* ReadingMode */ = {
 			isa = PBXGroup;
 			children = (
-				C77534391DC7EF8C00629628 /* ReadingMode.swift */,
-				C775343A1DC7EF8C00629628 /* ReadingMode+Metadata.swift */,
-				C775343B1DC7EF8C00629628 /* ReadingMode+Schema.swift */,
-				C77534231DC7EF1800629628 /* AppTextView.swift */,
+				C77534391DC7EF8C00629628 /* Mode.swift */,
+				C775343A1DC7EF8C00629628 /* StoryPageInteractor+Metadata.swift */,
+				C775343B1DC7EF8C00629628 /* StoryPageInteractor +Schema.swift */,
+				C77534231DC7EF1800629628 /* StoryShelfInteractor.swift */,
 			);
 			name = ReadingMode;
 			sourceTree = "<group>";
@@ -837,21 +837,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				C77534201DC7EEEE00629628 /* User+Schema.swift in Sources */,
-				C775343D1DC7EF8C00629628 /* ReadingMode+Metadata.swift in Sources */,
+				C775343D1DC7EF8C00629628 /* StoryPageInteractor+Metadata.swift in Sources */,
 				C77534341DC7EF6200629628 /* App+Metadata.swift in Sources */,
 				C775330F1DC7EA9A00629628 /* AppDelegate.swift in Sources */,
 				C77534361DC7EF6200629628 /* App+Tasks.swift in Sources */,
 				C77534331DC7EF6200629628 /* App+Extension.swift in Sources */,
 				C77534461DC7F14800629628 /* ReadViewController.swift in Sources */,
-				C775343C1DC7EF8C00629628 /* ReadingMode.swift in Sources */,
+				C775343C1DC7EF8C00629628 /* Mode.swift in Sources */,
 				C77534421DC7EFA500629628 /* Global.swift in Sources */,
-				C775343E1DC7EF8C00629628 /* ReadingMode+Schema.swift in Sources */,
+				C775343E1DC7EF8C00629628 /* StoryPageInteractor +Schema.swift in Sources */,
 				C77534351DC7EF6200629628 /* App+Schema.swift in Sources */,
 				C77534221DC7EEFE00629628 /* MainViewController.swift in Sources */,
 				C775341F1DC7EEEE00629628 /* User+Extension.swift in Sources */,
 				C77534321DC7EF6200629628 /* App.swift in Sources */,
 				C775341E1DC7EEEE00629628 /* User.swift in Sources */,
-				C77534241DC7EF1800629628 /* AppTextView.swift in Sources */,
+				C77534241DC7EF1800629628 /* StoryShelfInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
